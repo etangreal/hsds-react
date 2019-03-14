@@ -1,4 +1,5 @@
 import * as React from 'react'
+import iconMap from './iconMap'
 
 export const COMPONENT_KEY = 'Icon'
 
@@ -232,8 +233,10 @@ export const getIconComponent = (name: string) => {
   const iconName = ALIASES[name] || name
   // Only attempt to retrieve supported icons
   if (!ICONS[iconName]) return null
+  const iconPath = iconMap[iconName]
+
   // @ts-ignore
-  const IconComponent = require(`../Icons/${iconName}`).default
+  const IconComponent = require(iconPath).default
 
   return IconComponent ? React.createElement(IconComponent) : null
 }

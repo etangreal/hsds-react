@@ -10,6 +10,7 @@ module.exports = {
     '!src/styles/tests/helpers/**/*.{js,jsx,ts,tsx}',
     '!src/**/?(*.)css.{js,jsx,ts,tsx}',
     '!src/index.{js,jsx,ts,tsx}',
+    '!src/components/Icons.{ts,tsx}',
     '!src/components/Input/utils.{js,jsx}',
     '!src/components/Dropdown/V2/Dropdown.Renderer.tsx',
     '!src/components/Dropdown/V2/Dropdown.renderUtils.ts',
